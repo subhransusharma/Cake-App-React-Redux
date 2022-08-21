@@ -1,4 +1,4 @@
-import { FETCH_USER_FAILURE, FETCH_USER_SUCCESS, FETCH_USER_REQUEST } from "./userTypes";
+import { FETCH_USER_FAILURE, FETCH_USER_SUCCESS, FETCH_USER_REQUEST, ADD_USER_REQUEST, ADD_USER_SUCCESS, ADD_USER_FAILURE } from "./userTypes";
 import axios from 'axios'
 
 export const fetchUserRequest = () => {
@@ -21,6 +21,26 @@ export const fetchUserFailure = (error) => {
  }
 }
 
+export const addUserRequest = ({name:user}) => {
+   return {
+      type: ADD_USER_REQUEST
+   }
+  }
+  
+  export const addUserSuccess = (user) => {
+   return {
+      type: ADD_USER_SUCCESS,
+      payload: user
+   }
+  }
+  
+  export const addUserFailure = (error) => {
+   return {
+      type: ADD_USER_FAILURE,
+      payload: error
+   }
+  }
+
 export const fetchUsers = () => {
    return function(dispatch) {
       dispatch(fetchUserRequest())
@@ -32,6 +52,21 @@ export const fetchUsers = () => {
       .catch(error => {
          const errorMessage = error.message;
          dispatch(fetchUserFailure(errorMessage))
+      })
+   }
+}
+
+export const addUsers = (user) => {
+   return function(dispatch) {
+      dispatch(addUserRequest(user))
+      axios.post('https://jsonplaceholder.typicode.com/users', user)
+      .then(response => {
+         const users = response.data;
+         dispatch(addUserSuccess(user))
+      })
+      .catch(error => {
+         const errorMessage = error.message;
+         dispatch(addUserFailure(errorMessage))
       })
    }
 }
