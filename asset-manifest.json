@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/Cake-App-React-Redux/static/css/main.d1b05096.chunk.css",
+    "main.js": "/Cake-App-React-Redux/static/js/main.5e2b7863.chunk.js",
+    "main.js.map": "/Cake-App-React-Redux/static/js/main.5e2b7863.chunk.js.map",
+    "runtime-main.js": "/Cake-App-React-Redux/static/js/runtime-main.f80e4467.js",
+    "runtime-main.js.map": "/Cake-App-React-Redux/static/js/runtime-main.f80e4467.js.map",
+    "static/css/2.a779dd76.chunk.css": "/Cake-App-React-Redux/static/css/2.a779dd76.chunk.css",
+    "static/js/2.8aa8e1f6.chunk.js": "/Cake-App-React-Redux/static/js/2.8aa8e1f6.chunk.js",
+    "static/js/2.8aa8e1f6.chunk.js.map": "/Cake-App-React-Redux/static/js/2.8aa8e1f6.chunk.js.map",
+    "static/js/3.794455b0.chunk.js": "/Cake-App-React-Redux/static/js/3.794455b0.chunk.js",
+    "static/js/3.794455b0.chunk.js.map": "/Cake-App-React-Redux/static/js/3.794455b0.chunk.js.map",
+    "index.html": "/Cake-App-React-Redux/index.html",
+    "precache-manifest.1ef9426493435cd2957dea99a61b265e.js": "/Cake-App-React-Redux/precache-manifest.1ef9426493435cd2957dea99a61b265e.js",
+    "service-worker.js": "/Cake-App-React-Redux/service-worker.js",
+    "static/css/2.a779dd76.chunk.css.map": "/Cake-App-React-Redux/static/css/2.a779dd76.chunk.css.map",
+    "static/css/main.d1b05096.chunk.css.map": "/Cake-App-React-Redux/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.8aa8e1f6.chunk.js.LICENSE.txt": "/Cake-App-React-Redux/static/js/2.8aa8e1f6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f80e4467.js",
+    "static/css/2.a779dd76.chunk.css",
+    "static/js/2.8aa8e1f6.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.5e2b7863.chunk.js"
+  ]
+}
